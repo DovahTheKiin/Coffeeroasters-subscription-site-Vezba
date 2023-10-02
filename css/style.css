@@ -1,0 +1,1033 @@
+:root {
+    --var-dark-cyan:hsl(179, 81%, 29%);
+    --var-dark-gray-blue:hsl(215, 19%, 25%);
+    --var-pale-orange:hsl(25, 94%, 86%);
+    --var-light-cream:hsl(43, 78%, 98%);
+    --var-gray:hsl(215, 5%, 54%);
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    padding: 0rem 1.5rem;
+    background-color: var(--var-light-cream);
+}
+p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+    color: var(--var-light-cream);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+*{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+.nav-list {
+    display: none;
+}
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+}
+.logo {
+    width: 140px;
+    height: 16px;
+}
+.header {
+    background-image: url('../images/home/mobile/image-hero-coffeepress.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--var-light-cream);
+}
+.header-p {
+    color: #FEFCF7;
+    font-size: 0.937rem;
+    font-weight: 100;
+    line-height: 1.7;
+}
+.create-plan-btn {
+    background-color: var(--var-dark-cyan);
+    border-radius: 5px;
+    color: var(--var-light-cream);
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+.our-collection {
+    text-align: center;
+    margin-top: 6rem;
+    padding: 0rem 1.2rem;
+}
+.collection-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: lowercase;
+    margin-bottom: 2rem;
+    background: -webkit-linear-gradient(hsl(215, 5%, 64%) 15%, hsl(215, 5%, 84%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.item {
+    margin-bottom: 4rem;
+}
+.item-img {
+    width: 200px;
+    height: 151px;
+}
+.item-title {
+    margin: 1rem 0rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.item-p {
+    font-size: 0.9375rem;
+    color: var(--var-dark-gray-blue);
+    line-height: 1.7;
+}
+.why-choose-us {
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+.choose-bg {
+    position: absolute;
+    width: 100%;
+    height: 902px;
+    z-index: -10;
+    background-color: hsl(215, 19%, 20%);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.why-choose-title {
+    font-size: 1.75rem;
+    color: var(--var-light-cream);
+    margin-bottom: 1rem;
+}
+.why-choose-p {
+    font-size: 0.9375rem;
+    color: var(--var-light-cream);
+    font-weight: 100;
+    margin-bottom: 3rem;
+}
+.reason {
+    margin-bottom: 1.5rem;
+    background-color: var(--var-dark-cyan);
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    border-radius: 10px;
+}
+.reason-title {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--var-light-cream);
+}
+.reason-p {
+    font-weight: 300;
+}
+.how-it-works {
+    text-align: center;
+    margin-top: 3rem;
+}
+.how-it-works-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #83888F;
+}
+.works {
+    margin-top: 5rem;
+}
+.work {
+    margin-bottom: 3rem;
+}
+.works-number {
+    color: var(--var-pale-orange);
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+.works-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--var-dark-gray-blue);
+    margin: 1rem 0rem 1.5rem 0rem;
+}
+.works-p {
+    color: var(--var-dark-gray-blue);
+}
+.footer {
+    margin-top: 7rem;
+    background-color: var(--var-dark-gray-blue);
+    padding: 3rem;
+    text-align: center;
+}
+.footer-logo {
+    transform: scale(0.91);
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0rem;
+}
+.footer-nav li a {
+    font-family: 'Barlow', sans-serif;
+    color: var(--var-gray);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.socials-list {
+    margin-inline:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 100dvh;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    z-index: 10;
+    background:linear-gradient(hsl(43, 78%, 98%) 60%, hsl(43, 78%, 98%, 0.3));
+}
+.mobile-menu-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-menu-logo {
+    width: 140px;
+    height: 16px;
+}
+.mobile-menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 8rem 0rem;
+}
+.mobile-menu-list li a {
+    font-family: 'Fraunces', serif;
+    color: var(--var-dark-gray-blue);
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.circle {
+    display: none;
+}
+@media(min-width:650px) {
+    body {
+        padding: 0rem 2rem;
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .nav-list li a {
+        font-family: 'Barlow', sans-serif;
+        color: var(--var-gray);
+        letter-spacing: 1px;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+    .header {
+        background-image: url('../images/home/tablet/image-hero-coffeepress.jpg');
+        text-align: start;
+        align-items: start;
+        gap: 2.5rem;
+        padding: 0rem 4rem;
+    }
+    .header-title {
+        font-size: 3rem;
+        width: 329px;
+    }
+    .header-p {
+        width: 378px;
+    }
+    .collection-title {
+        font-size: 6rem;
+        background: -webkit-linear-gradient(hsl(215, 5%, 83%) 15%, hsl(215, 5%, 99%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0rem;
+        transform: translateY(3rem);
+        position: relative;
+        z-index: -10;
+        letter-spacing: 1px;
+    }
+    .item {
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+    .item-img {
+        width: 255px;
+        height: 193px;
+    }
+    .item-description {
+        width: 40%;
+        text-align: start;
+    }
+    .why-choose-us {
+        text-align: center;
+        padding: 3.5rem 4rem;
+    }
+    .why-choose-title {
+        font-size: 2rem;
+        margin-bottom: 2.2rem;
+    }
+    .why-choose-p {
+        width: 82%;
+        margin-inline: auto;
+    }
+    .reason {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1.6rem;
+        background-color: var(--var-dark-cyan);
+        padding: 2.5rem 3rem;
+        border-radius: 10px;
+    }
+    .reason-title {
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+    }
+    .reason-description {
+        text-align: start;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .choose-bg {
+        height: 573px;
+    }
+    .how-it-works {
+        text-align: start;
+    }
+    .works {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
+    .works::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 16px;
+        border-top: 2px solid var(--var-pale-orange);
+        width: 68%;
+    }
+    .work {
+        width: 33%;
+        margin-bottom: 3.5rem;
+    }
+    .works-title {
+        margin: 2.3rem 0rem;
+        max-width: 225px;
+    }
+    .circle {
+        display: block;
+        border: 2px solid var(--var-dark-cyan);
+        border-radius: 50%;
+        height: 31px;
+        width: 31px;
+        background-color: #fff;
+        transform: translateY(-2.9rem);
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 3.5rem;
+    }
+    .logo {
+        width: 203px;
+        height: 24px;
+    }
+}
+@media(min-width:950px) {
+    p {
+        font-size: 1rem !important;
+    }
+    body {
+        padding: 0rem 4rem;
+    }
+    .logo {
+        width: 236px;
+        height: 26px;
+    }
+    .nav {
+        padding: 3rem 0rem;
+    }
+    .header {
+        background-image: url('../images/home/desktop/image-hero-coffeepress.jpg');
+        padding: 6rem 4rem;
+    }
+    .header-title {
+        font-size: 4.5rem;
+        width: 493px;
+        line-height: 1;
+    }
+    .collection-title {
+        font-size: 9.375rem;
+    }
+    .our-collection {
+        padding: 0;
+        margin-top: 10rem;
+    }
+    .collection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    .item {
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        width: 25%;
+        margin-bottom: 14rem;
+    }
+    .item-title {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .item-description {
+        width: 100%;
+        text-align: center;
+    }
+    .why-choose-us {
+        padding-top: 6rem;
+    }
+    .why-choose-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .why-choose-p {
+        max-width: 540px;
+        margin-bottom: 8rem;
+    }
+    .reasons {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .reason {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem 4rem;
+    }
+    .reason-description {
+        margin-top: 4rem;
+        text-align: center !important;
+        width: 100%;
+        align-items: center;
+    }
+    .works-title {
+        font-size: 2rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-nav {
+        margin: 0rem;
+        margin-right: auto;
+        margin-left: 6rem;
+    }
+    .socials-list {
+        margin: 0rem;
+    }
+}
+
+/* ABOUT US */
+
+.about-us-header {
+    background-image: url('../images/about/mobile/image-hero-whitecup.jpg');
+    padding: 0rem 1.75rem;
+    margin-bottom: 8rem;
+    height: 400px;
+}
+.auh-title {
+    font-size: 1.75rem;
+}
+.commitment {
+    margin-bottom: 10rem;
+}
+.commitment-img {
+    width: 327px;
+    height: 400px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+.our-commitment {
+    text-align: center;
+}
+.commitment-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: var(--var-dark-gray-blue);
+}
+.commitment-p {
+    color: var(--var-dark-gray-blue);
+}
+.uncompromising-quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(215, 19%, 20%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 7rem;
+}
+.quality-img {
+    width: 279px;
+    height: 156px;
+    border-radius: 10px;
+    transform: translateY(-5rem);
+}
+.quailty {
+    transform: translateY(-5rem);
+}
+.quality-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--var-light-cream);
+    margin-bottom: 1.5rem;
+}
+.quality-p {
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.headquarters {
+    text-align: center;
+}
+.hq-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--var-gray);
+    margin-bottom: 4rem;
+}
+.hq-location {
+    margin-bottom: 5rem;
+}
+.hq-img {
+    margin-bottom: 2rem;
+}
+.hq-name {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--var-dark-gray-blue);
+    margin-bottom: 2rem;
+}
+.hq-address {
+    color: var(--var-dark-gray-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.break-p {
+    color: var(--var-dark-gray-blue) !important;
+    font-weight: 500;
+}
+.break-p::after{
+    content: "\a";
+    white-space: pre;
+}
+.commitment-img {
+    display: block;
+}
+.commitment-img-tablet {
+    display: none;
+}
+.commitment-img-desktop {
+    display: none;
+}
+.quality-img-desktop {
+    display: none;
+}
+@media(min-width:773px) {
+    .about-us-header {
+        background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+        padding: 0rem 3.5rem;
+        margin-bottom: 8rem;
+    }
+    .auh-title {
+        font-size: 2rem;
+    }
+    .commitment-img {
+        display: none;
+    }
+    .commitment-img-desktop {
+        display: none;
+    }
+    .commitment-img-tablet {
+        display: block;
+        border-radius: 10px;
+        width: 281px;
+        height: 470px;
+    }
+    .commitment {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        margin-bottom: 12rem;
+    }
+    .our-commitment {
+        width: 60%;
+    }
+    .commitment-title {
+        text-align: start;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .commitment-p {
+        text-align: start;
+    }
+    .quality-img {
+        width: 573px;
+        height: 320px;
+        border-radius: 10px;
+        transform: translateY(-5rem);
+    }
+    .uncompromising-quality {
+        padding: 1.5rem 4rem;
+    }
+    .quality-title {
+        font-size: 2rem;
+    }
+    .headquarters {
+        text-align: start;
+    }
+    .hq-locations {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .hq-location {
+        width: 33%;
+    }
+    .hq-name {
+        font-size: 1.5rem;
+    }
+}
+@media(min-width:1100px) {
+    .about-us-header {
+        background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+        padding: 0rem 3.5rem;
+        margin-bottom: 8rem;
+    }
+    .auh-title {
+        font-size: 2.5rem;
+    }
+    .auh-p {
+        width: 420px;
+    }
+    .commitment-img {
+        display: none;
+    }
+    .commitment-img-tablet {
+        display: none;
+    }
+    .commitment-img-desktop {
+        display: block;
+        width: 445px;
+        height: 520px;
+        border-radius: 10px;
+    }
+    .commitment {
+        padding: 0rem clamp(0rem, 4vw, 5rem);
+        gap: clamp(1rem, 6vw, 7rem);
+    }
+    .our-commitment {
+        padding-top: clamp(0rem, 4vw, 4rem);
+    }
+    .commitment-title {
+        font-size: 2.5rem;
+        margin-top: 0rem;
+    }
+    .uncompromising-quality {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 5rem;
+        padding: 1.5rem clamp(1.5rem, 6vw, 6rem);
+    }
+    .quality-img {
+        display: none;
+    }
+    .quality-img-desktop {
+        display: block;
+        width: 445px;
+        height: 474px;
+        border-radius: 10px;
+        transform: translateY(-6.5rem);
+    }
+    .quality {
+        text-align: start !important;
+    }
+    .quality-p {
+        max-width: 540px;
+    }
+    .quality-title {
+        font-size: 2.5rem;
+    }
+    .hq-name {
+        font-size: 2rem;
+    }
+}
+.plan-header {
+    background-image: url('../images/plan/mobile/image-hero-blackcup.jpg');
+    height: 400px;
+}
+.create-your-plan {
+    background-color: hsl(215, 19%, 20%);
+    border-radius: 10px;
+    padding: 4rem 1rem;
+    padding-bottom: 1rem;
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+}
+.cyp-works {
+    margin-top: 0rem;
+}
+.white-plan-title {
+    color: var(--var-light-cream);
+}
+.cyp-works-p {
+    color: #fff;
+    font-weight: 300;
+}
+.accordition-title {
+    font-size: 1.5rem;
+    max-width: 240px;
+    font-weight: 900;
+    color: var(--var-gray);
+}
+.accordition-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.accordition-lower {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 7rem;
+}
+.accordition-choice {
+    padding: 2rem;
+    background-color: #F4F1EB;
+    border-radius: 10px;
+}
+.choice-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--var-dark-gray-blue);
+    margin-bottom: 1rem;
+}
+.choice-p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333D4B;
+}
+.order-summary {
+    background-color: hsl(215, 19%, 20%);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.order-summary-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--var-gray);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+.order-summary-p {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+.order-button {
+    letter-spacing: 1px;
+    margin-top: 4rem;
+    margin-inline: auto !important;
+}
+.custom-plan-list {
+    display: none;
+}
+.black-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 9;
+}
+.order-summary-final {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 90%;
+    background-color: var(--var-light-cream);
+    z-index: 10;
+    border-radius: 10px;
+}
+.order-header {
+    padding: 2rem;
+    background-color: var(--var-dark-gray-blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.final-order-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #fff;
+}
+.order-summary-text {
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.order-summary-final-p {
+    color: var(--var-gray);
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+.mobile-checkout-btn {
+    width: 100%;
+    padding: 1.250rem 2rem;
+    background-color: var(--var-dark-cyan);
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.is-order-correct {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: var(--var-dark-gray-blue);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+@media(min-width:650px) {
+    .plan-header {
+        background-image: url('../images/plan/tablet/image-hero-blackcup.jpg');
+    }
+    .create-your-plan {
+        padding: 8rem 3rem;
+        padding-bottom: 8rem;
+    }
+    .plan-circle {
+        background-color: transparent;
+        border-color: var(--var-dark-cyan);
+    }
+    .plan-work {
+        margin-bottom: 0rem;
+    }
+    .accordition-title {
+        font-size: 2rem;
+        max-width: 506px;
+        font-weight: 900;
+        color: var(--var-gray);
+    }
+    .accordition-upper {
+        margin-bottom: 3rem;
+    }
+    .accordition-lower {
+        flex-direction: row;
+        gap: 0.75rem;
+    }
+    .accordition-choice {
+        padding-bottom: 5rem;
+        cursor: pointer;
+    }
+    .choice-title {
+        margin-bottom: 2rem;
+    }
+    .order-summary {
+        padding: 2.5rem;
+    }
+    .order-summary-p {
+        font-size: 1.5rem !important;
+    }
+    .order-summary-final {
+        max-width: 540px;
+        max-height: 597px;
+    }
+    .mobile-checkout-btn {
+        width: auto;
+        margin-inline: auto;
+    }
+}
+@media(min-width:950px) {
+    .plan-header {
+        background-image: url('../images/plan/desktop/image-hero-blackcup.jpg');
+    }
+    .create-your-plan {
+        padding: 8rem 5rem;
+        padding-bottom: 8rem;
+    }
+    .custom-plan {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .custom-plan-list-wrapper {
+        padding: 4rem;
+        padding-top: 0rem;
+    }
+    .custom-plan-list {
+        display: block;
+    }
+    .custom-plan-list {
+        font-family: 'Fraunces', serif;
+    }
+    .custom-plan-list li {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #83888F;
+        opacity: 0.6;
+        display: flex;
+        gap: 1rem;
+        border-bottom: 1px solid var(--var-gray);
+        padding: 2rem 0rem;
+    }
+    .custom-plan-list li:nth-child(5) {
+        border-bottom: none;
+    }
+    .colored-number {
+        color: #83888F !important;
+        opacity: 0.6 !important;
+    }
+    .plan-accordition {
+        width: 55%;
+    }
+    .custom-plan-list li:nth-child(1) span:nth-child(1) {
+        color: var(--var-dark-cyan) !important;
+    }
+    .accordition-title {
+        font-size: 2.5rem;
+        max-width: 632px;
+    }
+}
+/* JS CLASSES */
+
+.hidden {
+    display: none;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.selected {
+    background-color: var(--var-dark-cyan);
+}
+.selected h4 {
+    color: #fff;
+}
+.selected p {
+    color: #fff;
+    font-weight: 300;
+}
+.selected-li {
+    color: var(--var-dark-gray-blue) !important;
+    opacity: 1 !important;
+}
+.selected-span {
+    opacity: 1 !important;
+}
+.faq-hidden {
+    display: none;
+}
+.rotate-arrow-lul {
+    transform: rotate(180deg);
+}
+.colored-underline {
+    color: var(--var-dark-cyan);
+}
