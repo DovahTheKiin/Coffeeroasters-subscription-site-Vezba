@@ -93,6 +93,9 @@ button {
     font-size: 1.125rem;
     font-weight: 900;
 }
+.create-plan-btn:hover:enabled {
+    background-color: #66D2CF;
+}
 .our-collection {
     text-align: center;
     margin-top: 6rem;
@@ -291,6 +294,9 @@ button {
         font-size: 0.75rem;
         font-weight: 700;
     }
+    .nav-list li a:hover {
+        color: #333D4B;
+    }
     .header {
         background-image: url('../images/home/tablet/image-hero-coffeepress.jpg');
         text-align: start;
@@ -409,9 +415,18 @@ button {
         margin-top: 2rem;
         margin-bottom: 3.5rem;
     }
+    .footer-nav li a:hover {
+        color: #FEFCF7;
+    }
     .logo {
         width: 203px;
         height: 24px;
+    }
+    .socials-list li svg {
+        cursor: pointer;
+    }
+    .socials-list li svg:hover path {
+        fill: #FDD6BA;
     }
 }
 @media(min-width:950px) {
@@ -793,12 +808,13 @@ button {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
 }
 .accordition-choice {
     padding: 2rem;
     background-color: #F4F1EB;
     border-radius: 10px;
+    width: 33%;
 }
 .choice-title {
     font-size: 1.5rem;
@@ -896,6 +912,30 @@ button {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
+.wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s ease-out;
+}  
+.wrapper.is-open {
+    grid-template-rows: 1fr;
+}
+.accordition-lower {
+    overflow: hidden;
+    margin-bottom: 7rem;
+    transition: margin-bottom 0.4s ease-out;
+}
+.accordition-lower.faq-hidden {
+    transition: margin-bottom 0.4s ease-out;
+    margin-bottom: 0rem !important;
+}
+.rotate-arrow {
+    transform: rotate(0deg);
+    transition: transform 0.4s;
+}
+.mobile-checkout-btn:hover {
+    background-color: #66D2CF;
+}
 @media(min-width:650px) {
     .plan-header {
         background-image: url('../images/plan/tablet/image-hero-blackcup.jpg');
@@ -945,6 +985,16 @@ button {
         width: auto;
         margin-inline: auto;
     }
+    /* .accordition-choice:hover {
+        background-color: #FDD6BA;
+        color: #333D4B;
+    }
+    .accordition-choice:hover h4 {
+        color: #333D4B;
+    }
+    .accordition-choice:hover p {
+        color: #333D4B;
+    } */
 }
 @media(min-width:950px) {
     .plan-header {
@@ -997,6 +1047,18 @@ button {
         max-width: 632px;
     }
 }
+@media (hover: hover) {
+    .accordition-choice:hover {
+        background-color: #FDD6BA;
+        color: #333D4B;
+    }
+    .accordition-choice:hover h4 {
+        color: #333D4B;
+    }
+    .accordition-choice:hover p {
+        color: #333D4B;
+    }
+}
 /* JS CLASSES */
 
 .hidden {
@@ -1007,6 +1069,8 @@ button {
 }
 .selected {
     background-color: var(--var-dark-cyan);
+    pointer-events: none;
+    cursor: pointer !important;
 }
 .selected h4 {
     color: #fff;
@@ -1022,12 +1086,17 @@ button {
 .selected-span {
     opacity: 1 !important;
 }
-.faq-hidden {
+/* .faq-hidden {
     display: none;
-}
+} */
 .rotate-arrow-lul {
     transform: rotate(180deg);
+    transition: transform 0.4s;
 }
 .colored-underline {
     color: var(--var-dark-cyan);
+}
+.disabled {
+    background-color: #E2DEDB;
+    color: #FEFCF7;
 }

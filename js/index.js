@@ -15,6 +15,7 @@ const orderSummary = document.querySelector(".order-summary-final")
 const checkoutBtn = document.querySelector(".mobile-checkout-btn")
 const ammountSpan = document.querySelector(".ammount")
 const accorditionOption = document.querySelectorAll(".accordition-option")
+const wrapper = document.querySelectorAll(".wrapper")
 
 hamburgerBtn.addEventListener('click', () => {
     mobileMenu.classList.remove("hidden");
@@ -134,6 +135,19 @@ const clickHandler = (ev) => {
         coloredUnderline[9].innerHTML = "Every month";
         ammountSpan.innerHTML = "22.50";
     }
+    for(let i=0;i<accorditionLower.length;i++) {
+        let childrenNodes = accorditionLower[i].children;
+        for(let j=0;j<childrenNodes.length;j++) {
+            if(childrenNodes[j].classList.contains("selected")) {
+                accorditionLower[i].classList.add("lole");
+                let buttons = Array.from(accorditionLower); 
+                if(buttons.every((btn) => btn.classList.contains("lole"))) {
+                    orderBtn.disabled = false;
+                    orderBtn.classList.remove("disabled");
+                };
+            }
+        }
+    }
 }
 for(let i=0; i<accorditionLower.length;i++) {
     accorditionLower[i].addEventListener('click', clickHandler);
@@ -153,9 +167,11 @@ for(let i=0;i<accorditionArrow.length;i++) {
                     targetLul.classList.remove("selected-li");
                 }
             }
+            wrapper[i].classList.add("is-open")
         } 
         else if(accorditionLower[i].classList.contains("faq-hidden")) {
             selectedLi[i].classList.remove("selected-li")
+            wrapper[i].classList.remove("is-open")
         }
     })
 }
@@ -169,3 +185,18 @@ checkoutBtn.addEventListener('click', () => {
     orderSummary.classList.add("hidden");
     body.classList.remove("no-scroll");
 })
+document.body.addEventListener('click', function( event ){
+for(let i=0;i<accorditionOption.length;i++) {
+	if(accorditionOption[i].contains(event.target) ){
+		selectedLi[i].classList.add("selected-li")
+            for (const btn of selectedLi) {
+                let targetLul = btn;
+                let list_items = Array.from(selectedLi);
+                let indexOfDiv = list_items.indexOf(targetLul);
+                if(indexOfDiv !== i) {
+                    targetLul.classList.remove("selected-li");
+                }
+            }
+	}
+}
+});
